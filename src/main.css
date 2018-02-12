@@ -1,7 +1,7 @@
 
 
 body {
- background: url(cleaning.jpg) no-repeat center center fixed;
+ background: url(src/cleaning.jpg) no-repeat center center fixed;
 background-size: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
