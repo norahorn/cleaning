@@ -51,15 +51,3 @@ h2, p {
 	margin: 0;
 }
 
-@media (screen) and (max-width: 320px) {
-
-h1 {
-	font-size: 1em;
-}
-h2,p {
-	font-size: 0.634em;
-}
-
-}
-
-
