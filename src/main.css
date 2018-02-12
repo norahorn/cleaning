@@ -54,7 +54,7 @@ h2, p {
 
 @media (screen) and (max-width: 320px) {
 
-.body {
+body {
 	font-size: 50%;
 }
 
