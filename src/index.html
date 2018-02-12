@@ -1,24 +1,57 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-<script>
-Date.prototype.getWeekNumber = function(){
-  var d = new Date(Date.UTC(this.getFullYear(), this.getMonth(), this.getDate()));
-  var dayNum = d.getUTCDay() || 7;
-  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
-  var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
-  return Math.ceil((((d - yearStart) / 86400000) + 1)/7)
-};
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+		<title>VDG Cleaning Schedule</title>
 
-document.write('The current week number is ' + new Date().getWeekNumber());
+	<link rel="stylesheet" href="main.css">
+	</head>
 
-</script>
-</head>
+	<body>
 
-<body>
+	<main>
 
-</body>
-</html>
+		<div class="content">
+	<h1> VDG Cleaning Schedule </h1>
+	<h2> The current week number is </h2>
+
+
+	<script>
+	Date.prototype.getWeekNumber = function(){
+	  var d = new Date(Date.UTC(this.getFullYear(), this.getMonth(), this.getDate()));
+	  var dayNum = d.getUTCDay() || 7;
+	  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+	  var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
+	  return Math.ceil((((d - yearStart) / 86400000) + 1)/7)
+	};
+
+	document.write(new Date().getWeekNumber()) ;
+	</script>
+
+	<script>
+	Date.prototype.getWeekNumber = function(){
+	  var d = new Date(Date.UTC(this.getFullYear(), this.getMonth(), this.getDate()));
+	  var dayNum = d.getUTCDay() || 7;
+	  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+	  var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
+	  return Math.ceil((((d - yearStart) / 86400000) + 1)/7)
+	};
+
+	document.getElementbyID("weeknumber").innerHTML = getWeekNumber();
+	</script>
+
+
+	<script>
+
+		</script>
+
+	<p id="weeknumber"> </p>
+	<h2> need to clean. </h2>
+
+	</div>
+	</main>
+
+	</body>
+	</html>
