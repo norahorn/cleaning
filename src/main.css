@@ -14,10 +14,11 @@ display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+   flex: 0 1 200px;
 
 max-width: 40em;
 margin:  auto;
-margin-top: 15em;
+margin-top: 10em;
 background-color: rgba(24,24,24,0.8);
 
 }
