@@ -17,6 +17,7 @@ display: flex;
 max-width: 40em;
 margin-left: 20% 0 20% 0;
 margin-top: 10em;
+margin-bottom: 10em;
 background-color: rgba(24,24,24,0.8);
 
 }
@@ -50,4 +51,11 @@ h2, p {
 	font-family: "Amatic SC", Helvetice, Lato, sans-serif;
 	margin: 0;
 }
+
+@media (screen) and (max-width: 320px) {
+
+.body {
+	font-size: 50%;
+}
+
 
