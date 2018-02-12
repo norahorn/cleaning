@@ -53,8 +53,11 @@ h2, p {
 
 @media (screen) and (max-width: 320px) {
 
-body {
-	font-size: 50%;
+h1 {
+	font-size: 1em;
+}
+h2,p {
+	font-size: 0.634em;
 }
 
 }
