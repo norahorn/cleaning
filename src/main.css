@@ -1,5 +1,54 @@
+
+
+body {
+ background: url(cleaning.jpg) no-repeat center center fixed;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+
+}
+
 .content {
-	 display: flex;
+display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+
+max-width: 40em;
+margin:  auto;
+margin-top: 15em;
+background-color: rgba(24,24,24,0.8);
+
 }
+h1 {
+	
+	font-size: 3em;
+	color: white;
+	font-family: "Amatic SC", Helvetice, Lato, sans-serif;
+	font-weight: lighter;
+		font-weight: lighter;
+	-webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+	 margin-bottom: 0;
+}
+
+h2, p {
+	font-family: "Montserrat", sans-serif;
+	font-weight: lighter;
+	-webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+	 color: white;
+	 font-size: 1.3em;
+}
+
+
+
+
+#oe, #nh {
+	color: #FF5252;
+	font-size: 6em;
+	font-family: "Amatic SC", Helvetice, Lato, sans-serif;
+	margin: 0;
+}
+
