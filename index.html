@@ -12,6 +12,8 @@
 <body>
 
 <main>
+
+	<div class="content">
 <h1> VDG Cleaning Schedule </h1>
 <h2> The current week number is </h2>
 
@@ -36,8 +38,8 @@ Date.prototype.getWeekNumber = function(){
   var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
   return Math.ceil((((d - yearStart) / 86400000) + 1)/7)
 };
-
-document.getElementbyID('weeknumber').innerHTML = (new Date().getWeekNumber()) ;
+var wn = new Date().getWeekNumber();
+document.getElementbyID('weeknumber').innerHTML =  wn;
 </script>
 
 
@@ -45,10 +47,10 @@ document.getElementbyID('weeknumber').innerHTML = (new Date().getWeekNumber()) ;
 
 	</script>
 
-<p id='weeknumber'> </p>
-<h2> need to clean </h2>
+<div id='weeknumber'> </div>
+<h2> need to clean. </h2>
 
-
+</div>
 </main>
 
 </body>
