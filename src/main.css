@@ -15,8 +15,7 @@ display: flex;
   justify-content: center;
   flex-direction: column;
 max-width: 40em;
-margin-top: 10em;
-margin-bottom: 10em;
+margin: 10em, auto, 10em, auto;
 background-color: rgba(24,24,24,0.8);
 
 }
