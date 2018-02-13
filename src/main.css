@@ -32,7 +32,7 @@ h1 {
 	 margin-bottom: 0;
 }
 
-h2, p {
+h2 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: lighter;
 	-webkit-font-smoothing: antialiased;
@@ -41,13 +41,22 @@ h2, p {
 	 font-size: 1.3em;
 }
 
+#wn {
+	font-size: 3em;
+	line-height: 0;
+	color: white;
+	font-weight: bolder;
+	margin: 0.8em auto 0 auto;
+}
 
 
 
 #oe, #nh {
 	color: #FF5252;
 	font-size: 6em;
+	line-height: 0;
 	font-family: "Amatic SC", Helvetice, Lato, sans-serif;
-	margin: 0;
+	margin: 0 auto 0 auto;
+
 }
 

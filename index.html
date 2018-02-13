@@ -20,68 +20,44 @@
 
 			<!-- Script to determine the weeknumber -->
 			<script >
-				Date.prototype.getWeekNumber = function(){
+			Date.prototype.getWeekNumber = function(){
 					var d = new Date(Date.UTC(this.getFullYear(), this.getMonth(), this.getDate()));
 					var dayNum = d.getUTCDay() || 7;
 					d.setUTCDate(d.getUTCDate() + 4 - dayNum);
 					var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
-					return Math.ceil((((d - yearStart) / 86400000) + 1)/7)
-				};
+					return Math.ceil((((d - yearStart) / 86400000) + 1)/7);
+					
+					}
+								document.write("<p id='wn'>" + new Date().getWeekNumber() + "</p>");	
+	
+	</script>
 
-				document.write(new Date().getWeekNumber());
-			</script>
 
-
-			<!-- Script to determine whether the week is odd or even -->
-			<!-- Should display who is responsible for cleaning depending on the output -->
-			<!-- Should display who is responsible for cleaning depending on the output -->
-			<script>
-				window.onload function checkwho () {
+	<script>
+				window.onload = function() {
 					var who = new Date();
-					if (who.getWeekNumber()%2) {
-						document.getElementbyID("nh").style.display = "block";
-						document.getElementbyID("oe").style.display = "none";
+					if (who.getWeekNumber()%2 == 0) {
+						document.getElementById("nh").style.display = "block";
+						document.getElementById("oe").style.display = "none";
 
 					}
 					else {
 
-						document.getElementbyID("oe").style.display = "block";
-						document.getElementbyID("nh").style.display = "none";
+						document.getElementById("oe").style.display = "block";
+						document.getElementById("nh").style.display = "none";
 					}
-				}
+				};
 
 			</script>
-
+	
 			<!-- These should only be displayed if its the right week (odd resp. even)-->
-			<p id="oe" > Ole & Elsi </p>
-			<p id="nh" > Nora & Hanna </p>
 
-			<!-- Another try... nothing works. Meh. -->
-			<script>
-				window.onload function checkwho () {
-					var who = new Date().getWeekNumber();
-					function evenorodd(who) { 
-						if (who%2 == 0)
-							return true;
-						else
-							return false;
-					}
-					switch (evenorodd) {
+			<p id="wn"> </p> 
 
-						case true: return ("Test1");
-						case false: return ("Test2");
-						default: return ("fuck");
+			<p id="oe"> Ole & Elsi </p>
 
-					}
-
-				}
-				
-			</script>
-			
-
-
-
-
+			<p id="nh"> Nora & Hanna </p>
+	
 		<h2> are the chosen ones! </h2>
 		<br>
 		<br>
